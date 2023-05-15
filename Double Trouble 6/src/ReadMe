@@ -1,0 +1,23 @@
+1. The instantiation of the fundamental combinatorial game called "Double Trouble" is actually know as a game called
+"Nim" or "3 5 7 Nim" in this case. The game is said to have been originated in China and it closely resembles "jian-shizi"
+which is a game of picking stones. The game of Nim was first analyzed mathematically by the mathematician Charles Bouton in 1901,
+and its optimal strategy was later formalized by mathematician and computer scientist Elwyn Berlekamp in the 1960s.
+The game of Nim has appeared in popular culture in various forms. In the movie "WarGames" (1983),
+the main character David Lightman uses the game of Nim to teach his computer how to learn. It appears a lot in other videogames,
+and puzzles.
+
+
+In the game of 3 5 7 Nim, Players take turns removing any amount of items from 1 of the 3 piles if there are markers available
+in the pile.
+The players keep taking turns removing items until the player who makes the last move wins.
+The XOR sum strategy can be used to determine the winning moves.
+To use this strategy, you first convert the number of markers of each color into binary form.
+Then, you calculate the XOR sum of the binary numbers for each pile.
+The XOR sum is obtained by adding the binary digits of the numbers in each color.
+Now, the player who moves first should try to make the XOR sum equal to zero.
+If the XOR sum is already zero, then the first player should make a move that keeps the XOR sum zero.
+If the XOR sum is not zero, then the first player should make a move that changes the XOR sum to zero.
+If the first player plays optimally and makes the XOR sum zero,
+then the second player can only make moves that change the XOR sum back to a non-zero value.
+This means that the first player will eventually win the game if they play optimally.
+
